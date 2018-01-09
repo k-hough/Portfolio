@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>KH Portfolio | Keith's Portfolio</title>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Keith Hough">
+    <meta name="description" content="Keith Hough, Web Design and Development Portfolio">
+    <meta name="keywords" content="Web Design, Web Development, Responsive, HTML5, HTML, CSS3, CSS, JavaScript, jQuery, WordPress, Drupal, Bootstrap, Adobe Creative Suite">
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <!--style elements-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-animation.min.css">
+    <link rel="stylesheet" href="slants.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <header id="main-nav" role="banner" class="slant slant-after fixed-top">
+            <h1 class="hide">Keith Hough, Web Developer</h1>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home fa-lg faa-pulse animated-hover" aria-hidden="true" title="Home Icon"></i>
+                    </a></li>
+                    <li><a href="index.html#skills-anchor">Skills</a></li>
+                    <li><a href="index.html#about-anchor">About</a></li>
+                    <li><a href="index.html#projects-anchor">Projects</a></li>
+                    <li><a href="index.html#connect-anchor">Connect</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main role="main">
+            <section>
+                <div id="project-screens">
+                    <img src="images/project-portfolio-desktop-mobile.png" alt="Keith's Portfolio">
+                </div> <!--project-screens-->
+
+                <div id="project-details">
+                    <h2>This Portfolio</h2>
+                        <hr>
+                    <ul>
+                        <li>jQuery |</li>
+                        <li>HTML5 |</li>
+                        <li>CSS3 |</li>
+                        <li>Photoshop |</li>
+                        <li>Illustrator</li>
+                    </ul>
+
+                    <P>This portfolio was created with HTML5, CSS3, and a little bit of jQuery. That's it.</P>
+                    <p>After seeing examples of angled edges <a href="https://www.viget.com/articles/angled-edges-with-css-masks-and-transformshere" target="_blank" class="underline">here</a>, I decided to incorporate some into my portfolio. This created some challenges - positioning the nav and footer angles, accounting for the anchor tags, and adjusting for margins between sections. The angled edges could have been accomplished via SVG or CSS and for this site I chose to use CSS. I also decided to add CSS transitions to the Projects section images in place of jQuery animations.</p>
+                    <p>I'm currently working on the "Connect" form and looking into PHPMailer for sending the message. The site optimization is valued "Good" with a rating of 94/ 100 on <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank" class="underline">Google PageSpeed</a> for desktop performance. The mobile rating is 84/ 100 and I'm continuing to increase its optimization.</p>
+                    <p>Have some suggestions on how I can improve this site? I would love to hear them! Share some knowledge at <a href="mailto:keith@keithsportfolio.com" class="underline">keith@keithsportfolio.com</a></p>
+
+                    <h3>Experience</h3>
+                        <hr>
+                    <ul class="list-experience">
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Implementing angled edges to the site design</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Incorporating CSS transitions</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>RWD with media queries</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Increasing site optimization with <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank" class="underline">Google PageSpeed</a></li>
+                    </ul>
+                    <a href="index.html#projects-anchor" class="button">BACK TO PROJECTS</a>
+                </div> <!--project-details-->
+
+                <div class="clear-fix"></div>
+            </section>
+
+            <section id="connect" class="slant slant-before" role="region">
+                <h2>Connect</h2>
+                <p>Interested in my skills? Like to see a Resum&eacute;?
+                <br>Send me an email at <a href="mailto:keith@keithsportfolio.com">keith@keithsportfolio.com</a> or simply fill out the form below.</p>
+
+                <form>
+                    <fieldset>
+                        <legend>Contact</legend>
+                            <label for="name"></label>
+                                <input type="text" name="name" id="name" required="required" placeholder=" your name"><br>
+                            <label for="email"></label>
+                                <input type="email" name ="email" id="email" required="required" placeholder=" your email"><br>
+                            <label for="message"></label>
+                                <input type="text" name="message" id="message" class="test" required="required" placeholder=" your message"><br>
+                        <button type="button" value="Send" id="submit"><span id="send-text">SEND</span></button>
+                    </fieldset>
+                </form>
+
+                <a href="https://github.com/k-hough" target="_blank"><i class="fa fa-github fa-3x faa-pulse animated-hover social-icons" aria-hidden="true" title="GitHub Logo"></i></a>
+                <a href="http://www.linkedin.com/in/mrkeithhough" target="_blank"><i class="fa fa-linkedin-square fa-3x faa-pulse animated-hover social-icons" aria-hidden="true" title="Linkedin Logo"></i></a>
+                <a href="http://www.codepen.io/keithhough" target="_blank"><i class="fa fa-codepen fa-3x faa-pulse animated-hover social-icons" aria-hidden="true" title="Codepen Logo"></i></a>
+            </section>
+        </main>
+
+        <footer class="slant slant-before bottom">
+            <a href="project-portfolio.html">About this Site</a>
+        </footer>
+    </div> <!--content-->
+
+        <script src="https://use.fontawesome.com/709213c3a4.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="portfolio.js"></script>
+
+</body>
+</html>

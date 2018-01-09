@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>KH Portfolio | Ipsum Generator</title>
+    <!--meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Keith Hough">
+    <meta name="description" content="Keith Hough, Project for Lorem Ipsum Generator">
+    <meta name="keywords" content="Web Design, Web Development, Responsive, HTML5, HTML, CSS, JavaScript, Bootstrap, Adobe Creative Suite, Photoshop, Illustrator">
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <!--style elements-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-animation.min.css">
+    <link rel="stylesheet" href="slants.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="content">
+        <header id="main-nav" role="banner" class="slant slant-after fixed-top">
+            <h1 class="hide">Keith Hough, Web Developer</h1>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home fa-lg faa-pulse animated-hover" aria-hidden="true" title="Home Icon"></i>
+                    </a></li>
+                    <li><a href="index.html#skills-anchor">Skills</a></li>
+                    <li><a href="index.html#about-anchor">About</a></li>
+                    <li><a href="index.html#projects-anchor">Projects</a></li>
+                    <li><a href="index.html#connect-anchor">Connect</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main role="main">
+            <section>
+                <div id="project-screens">
+                    <img src="images/project-ipsum-desktop-tablet.png" alt="Ipsum Generators">
+                </div> <!--project-screens-->
+
+                <div id="project-details">
+                    <h2>Lorem Ipsum Generator</h2>
+                    <ul>
+                        <li>JavaScript |</li>
+                        <li>Bootstrap 3 |</li>
+                        <li>HTML5 |</li>
+                        <li>CSS3 |</li>
+                        <li>Photoshop |</li>
+                        <li>Illustrator</li>
+                    </ul>
+
+                    <p>This Lorem Ipsum generator offers the user two GUIs to choose from and the option to include &lt;p&gt; tags. The application is coded in vanilla JavaScript and was designed for desktop and tablet use with Bootstrap 3.</p>
+                    <p>Future plans for the Beer Ipsum GUI include the option to select breweries by state and/or letting the user add their favorite beers.</p>
+
+                    <h3>Experience</h3>
+                        <hr>
+                    <ul class="list-experience">
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Coding vanilla JavaScript</li>
+                        <li><i class="fa fa-check" aria-hidden="true"></i>Working with Bootstrap 3</li>
+                    </ul>
+                    <a href="projects/ipsum-generator/index.html" target="_blank" class="button">SEE THE PROJECT</a>
+                </div> <!--project-details-->
+
+                <div class="clear-fix"></div>
+            </section>
+
+            <section id="connect" class="slant slant-before" role="region">
+                <h2>Connect</h2>
+                <p>Interested in my skills? Like to see a Resum&eacute;?
+                <br>Send me an email at <a href="mailto:keith@keithsportfolio.com">keith@keithsportfolio.com</a> or simply fill out the form below.</p>
+
+                <form>
+                    <fieldset>
+                        <legend>Contact</legend>
+                            <label for="name"></label>
+                                <input type="text" name="name" id="name" required="required" placeholder=" your name"><br>
+                            <label for="email"></label>
+                                <input type="email" name ="email" id="email" required="required" placeholder=" your email"><br>
+                            <label for="message"></label>
+                                <input type="text" name="message" id="message" class="test" required="required" placeholder=" your message"><br>
+                        <button type="button" value="Send" id="submit"><span id="send-text">SEND</span></button>
+                    </fieldset>
+                </form>
+
+                <a href="https://github.com/k-hough" target="_blank"><i class="fa fa-github fa-3x faa-pulse animated-hover social-icons" aria-hidden="true" title="GitHub Logo"></i></a>
+                <a href="http://www.linkedin.com/in/mrkeithhough" target="_blank"><i class="fa fa-linkedin-square fa-3x faa-pulse animated-hover social-icons" aria-hidden="true" title="Linkedin Logo"></i></a>
+                <a href="http://www.codepen.io/keithhough" target="_blank"><i class="fa fa-codepen fa-3x faa-pulse animated-hover social-icons" aria-hidden="true" title="Codepen Logo"></i></a>
+            </section>
+        </main>
+
+        <footer class="slant slant-before bottom">
+            <a href="project-portfolio.html">About this Site</a>
+        </footer>
+    </div> <!--content-->
+
+        <script src="https://use.fontawesome.com/709213c3a4.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="portfolio.js"></script>
+
+</body>
+</html>
