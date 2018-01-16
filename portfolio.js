@@ -1,5 +1,22 @@
 "use strict";
 
+var validateForm = function() {
+        var nameValue;
+        var emailValue;
+        nameValue = $("#name").val();
+        emailValue = $("#email").val();
+
+        if (nameValue === "") {
+            $("#error-name").text("Cannot be empty");
+            /* document.getElementById("error-name").innerHTML = "Cannot be empty"; */
+        }
+
+        if (emailValue === "") {
+            $("#error-email").text("Cannot be empty");
+            /* document.getElementById("error-email").innerHTML = "Cannot be empty"; */
+        }
+};
+
 $(document).ready(function(){
 
     // load more projects
@@ -8,9 +25,12 @@ $(document).ready(function(){
         $("#load-more").hide();
     });
 
-    // replace text in contact form when user submits
+    // validate name and email in contact form & replace text in contact form when user submits
     $("#submit").click(function() {
 
+        validateForm();
+
+/*
         var formData = $("#contact-form").serialize();
         $.post('mail/mail.php', formData,
             function(responseText) {
@@ -18,6 +38,8 @@ $(document).ready(function(){
                 $("#submit").addClass("form-button-click");
                 setTimeout(refreshButton, 4000);
             });
+*/
+
     });
 
     // refresh contact form after user submits
