@@ -420,6 +420,20 @@ input::placeholder { color: #d3d3d3; }
     cursor:auto;
 }
 
+.error-messages {
+    text-align: left;
+    margin: 0 auto;
+    width: 30%;
+}
+
+#name {
+    margin-bottom: 0;
+}
+
+#error-name {
+    color: red;
+}
+
 footer a {
     display: block;
     padding: 0 20px 10px 0;
