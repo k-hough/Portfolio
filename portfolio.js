@@ -2,6 +2,9 @@
 
 var validateForm = function() {
 
+        // for tracking if all input is valid
+        var isValid = true;
+
         // initialize error messages
         $("#error-name").text("");
         $("#error-email").text("");
@@ -19,21 +22,24 @@ var validateForm = function() {
         check next char is letter
         (voluntary) check next char is letter or number or -
         check next char is .
-        check next 2 char are letters) 
+        check next 2 char are letters)
         */
         var emailRegex = /^[a-zA-Z][a-zA-Z0-9\-_.]*@[a-zA-Z0-9][a-zA-Z0-9\-]*\.[a-zA-Z]{2,}$/;
 
         if (nameValue === "") {
-            $("#error-name").text("Cannot be empty");
-            /* document.getElementById("error-name").innerHTML = "Cannot be empty"; */
+            $("#error-name").text("please enter a name");
+            $("#name").focus();
+            isValid = false;
         }
 
         if (emailValue === "") {
-            $("#error-email").text("Cannot be empty");
-            /* document.getElementById("error-email").innerHTML = "Cannot be empty"; */
+                $("#error-email").text("please enter an email address");
+                if (isValid === true) {
+                    $("#email").focus();
+                }
         }
         else if (emailRegex.test(emailValue) === false) {
-            $("#error-email").text("not valid email");
+            $("#error-email").text("please enter a valid email");
         }
 };
 
@@ -50,13 +56,14 @@ $(document).ready(function(){
 
         validateForm();
 
-        var formData = $("#contact-form").serialize();
+        /*var formData = $("#contact-form").serialize();
         $.post('mail/mail.php', formData,
             function(responseText) {
                 $("#submit").text("Thanks. I'll be in touch.");
                 $("#submit").addClass("form-button-click");
                 setTimeout(refreshButton, 4000);
-            });
+            });*/
+
     });
 
     // refresh contact form after user submits

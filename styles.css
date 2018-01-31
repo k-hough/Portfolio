@@ -399,11 +399,11 @@ input {
     font-size: 1.2em;
     outline: none;
     padding: 0 0 .2em .3em;
-    margin-bottom: 1em;
+    margin-bottom: 2px;
     width: 30%;
 }
 
-input::placeholder { color: #d3d3d3; }
+input::placeholder { color: rgba(211, 211, 211, .5); }
 
 .social-icons {
     color: #fff;
@@ -421,18 +421,14 @@ input::placeholder { color: #d3d3d3; }
 }
 
 .error-messages {
+    color: red;
+    height: 1.8em;
+    width: 30%;
     text-align: left;
     margin: 0 auto;
-    width: 30%;
 }
 
-#name {
-    margin-bottom: 0;
-}
-
-#error-name {
-    color: red;
-}
+#submit { margin-top: 20px; }
 
 footer a {
     display: block;
