@@ -59,13 +59,13 @@ $(document).ready(function(){
 
         validateForm();
 
-        /*var formData = $("#contact-form").serialize();
-        $.post('mail/mail.php', formData,
+        var formData = $("#contact-form").serialize();
+        $.post('mail-workparts.php', formData,
             function(responseText) {
                 $("#submit").text("Thanks. I'll be in touch.");
                 $("#submit").addClass("form-button-click");
                 setTimeout(refreshButton, 4000);
-            });*/
+            });
 
     });
 
