@@ -1,6 +1,6 @@
 <?php
 
-const APP_IS_PRODUCTION = false;
+const APP_IS_PRODUCTION = true;
 const APP_MAIL_PWD_SETTING = 'mail_pwd';
 
 if (APP_IS_PRODUCTION) {
