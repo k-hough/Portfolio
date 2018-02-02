@@ -40,6 +40,9 @@ var validateForm = function() {
         }
         else if (emailRegex.test(emailValue) === false) {
             $("#error-email").text("please enter a valid email");
+            if (isValid === true) {
+                $("#email").focus();
+            }
         }
 };
 
