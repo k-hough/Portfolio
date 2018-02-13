@@ -395,6 +395,7 @@ input {
     background: transparent;
     border: none;
     border-bottom: 2px solid #FFF;
+    box-shadow: none;
     color: #FFF;
     font-size: 1.2em;
     outline: none;

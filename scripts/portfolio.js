@@ -33,17 +33,20 @@ var validateForm = function() {
         }
 
         if (emailValue === "") {
-                $("#error-email").text("please enter an email address");
-                if (isValid === true) {
-                    $("#email").focus();
-                }
+            $("#error-email").text("please enter an email address");
+            if (isValid === true) {
+                $("#email").focus();
+            }
+            isValid = false;
         }
         else if (emailRegex.test(emailValue) === false) {
             $("#error-email").text("please enter a valid email");
             if (isValid === true) {
                 $("#email").focus();
             }
+            isValid = false;
         }
+        return isValid;
 };
 
 $(document).ready(function(){
@@ -57,16 +60,21 @@ $(document).ready(function(){
     // validate name and email in contact form & replace text in contact form when user submits
     $("#submit").click(function() {
 
-        validateForm();
+        var inputIsValid = validateForm();
 
-        var formData = $("#contact-form").serialize();
-        $.post('mail-workparts.php', formData,
-            function(responseText) {
-                $("#submit").text("Thanks. I'll be in touch.");
-                $("#submit").addClass("form-button-click");
-                setTimeout(refreshButton, 4000);
-            });
+        if (inputIsValid === true) {
 
+            var formData = $("#contact-form").serialize();
+            $.post('mail-workparts.php', formData,
+                function(responseText) {
+                    $("#submit").text("Thanks. I'll be in touch.");
+                    $("#submit").addClass("form-button-click");
+                    setTimeout(refreshButton, 4000);
+                });
+
+            $("#name").val("");
+            $("#email").val("");
+        }
     });
 
     // refresh contact form after user submits
