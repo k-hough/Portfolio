@@ -9,6 +9,9 @@ function mailPwdget() {
             $pwd = $settings[APP_MAIL_PWD_SETTING];
         }
     }
+    else {
+        echo("config.file not found");
+    }
     return $pwd;
 }
 

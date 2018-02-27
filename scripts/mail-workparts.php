@@ -6,8 +6,16 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 use PHPMailer\PHPMailer\SMTP;
 
+// pass a boolean flag from js to php that determines prod or dev env
+$prodenv = $_GET['prodenv'];
+if ($prodenv == 'true') {
+    define('IS_PRODUCTION_ENV', true);
+}
+else if ($prodenv == 'false') {
+    define('IS_PRODUCTION_ENV', false);
+}
+
 // required PHPMailer classes
-const SMTP_SERVER = 'Dreamhost';
 require 'constants.php';
 require 'functions.php';
 require 'PHPMailer.php';

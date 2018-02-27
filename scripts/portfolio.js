@@ -62,10 +62,19 @@ $(document).ready(function(){
 
         var inputIsValid = validateForm();
 
-        if (inputIsValid === true) {
+        var serverScript = null;
+        var queryString = '?prodenv=' + IS_PRODUCTION_ENV;
 
+        if (IS_PRODUCTION_ENV) {
+            serverScript = MAIL_SCRIPT_PROD_PATH + 'mail-workparts.php' + queryString;
+        }
+        else {
+            serverScript = MAIL_SCRIPT_DEV_PATH + 'mail-workparts.php' + queryString;
+        }
+
+        if (inputIsValid === true) {
             var formData = $("#contact-form").serialize();
-            $.post('mail-workparts.php', formData,
+            $.post(serverScript, formData,
                 function(responseText) {
                     $("#submit").text("Thanks. I'll be in touch.");
                     $("#submit").addClass("form-button-click");
@@ -74,6 +83,7 @@ $(document).ready(function(){
 
             $("#name").val("");
             $("#email").val("");
+            $("#message").val("");
         }
     });
 

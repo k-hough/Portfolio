@@ -16,7 +16,7 @@ html, body {
 
 #content {
     background-attachment: fixed;
-    background-image: url("images/background-lg.jpg");
+    background-image: url("../images/background-lg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -468,7 +468,7 @@ MEDIA QUERIES
 
     .slant-after.fixed-top::after { bottom: -.75em; }
 
-    #content { background-image: url("images/background-md.jpg"); }
+    #content { background-image: url("../images/background-md.jpg"); }
 
     #about p { padding: 0 5em; }
 
@@ -479,7 +479,7 @@ MEDIA QUERIES
     #my-top-nav { padding-bottom: 18px; }
 
     #content {
-        background-image: url("images/background-sm.jpg");
+        background-image: url("../images/background-sm.jpg");
         background-position: center center;
     }
 
