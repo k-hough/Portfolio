@@ -57,7 +57,7 @@
 
 .slant-after.fixed-top::after {
     background-color: #012545;
-    background-image: url("images/background-top.jpg");
+    background-image: url("../images/background-top.jpg");
     bottom: 0;
 }
 
