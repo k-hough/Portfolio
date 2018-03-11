@@ -61,20 +61,11 @@ $(document).ready(function(){
     $("#submit").click(function() {
 
         var inputIsValid = validateForm();
-
-        var serverScript = null;
-        var queryString = '?prodenv=' + IS_PRODUCTION_ENV;
-
-        if (IS_PRODUCTION_ENV) {
-            serverScript = MAIL_SCRIPT_PROD_PATH + 'mail-workparts.php' + queryString;
-        }
-        else {
-            serverScript = MAIL_SCRIPT_DEV_PATH + 'mail-workparts.php' + queryString;
-        }
+        var mailScript = "/scripts/mail-workparts.php";
 
         if (inputIsValid === true) {
             var formData = $("#contact-form").serialize();
-            $.post(serverScript, formData,
+            $.post(mailScript, formData,
                 function(responseText) {
                     $("#submit").text("Thanks. I'll be in touch.");
                     $("#submit").addClass("form-button-click");
