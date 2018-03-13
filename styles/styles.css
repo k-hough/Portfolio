@@ -9,10 +9,12 @@ GLOBAL
 
 html { background-color: #fce5b2; }
 
+/*
 html, body {
     height: 100%;
     width: 100%;
 }
+*/
 
 #content {
     background-attachment: fixed;
@@ -22,12 +24,12 @@ html, body {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1em;
-    height: 100%;
+    /*height: 100%;*/
     line-height: 1.6;
     margin: 0 auto;
     max-width: 1440px;
-    overflow: auto;
-    width: 100%;
+    /*overflow: auto;
+    width: 100%;*/
 }
 
 section {
