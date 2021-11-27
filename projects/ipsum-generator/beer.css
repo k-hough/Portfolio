@@ -33,7 +33,10 @@ input { width: 35px; }
     width: 34.375em;
 }
 
-textarea { resize: none; }
+textarea { 
+    color: #000;
+    resize: none; 
+}
 
 #copy, #clear {
     background-color: #1a1a1a;

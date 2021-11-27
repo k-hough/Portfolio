@@ -38,6 +38,7 @@ label { padding: 20px 10px 0 10px; }
 textarea {
     background-color: #031507;
     border: none;
+    color: #fff;
     resize: none;
 }
 
