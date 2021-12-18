@@ -102,7 +102,7 @@ window.onload = function() {
     getById("btn-upper").onclick = division;
     getById("btn-reset").onclick = reset;
 
-    //var url = "http://localhost:8888/projects/csu/classes.json";
+    //var url = "http://127.0.0.1:3000/projects/csu-interactive/classes.json";
     var url = "https://www.keithsportfolio.com/classes.json";
     request = new XMLHttpRequest();
     request.open("GET", url);

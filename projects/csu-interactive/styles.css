@@ -21,7 +21,10 @@ GLOBAL
     src: url(fonts/vitesse.otf);
 }
 
-body { max-width: 1280px; }
+main { 
+    max-width: 1280px;
+    margin: 0 auto;
+ }
 
 /************************************************
 HEADER
@@ -120,6 +123,8 @@ section#main hr {
     border: 1px solid #ec7100;
     border-width: 1px;
     width: 85%;
+    margin: 18px auto;
+    opacity: 1;
 }
 
 .btn-clicked {
