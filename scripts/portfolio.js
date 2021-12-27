@@ -61,7 +61,7 @@ $(document).ready(function(){
     $("#submit").click(function() {
 
         var inputIsValid = validateForm();
-        var mailScript = "/scripts/mail-workparts.php";
+        var mailScript = "https://www.keithsportfolio.com/scripts/mail-workparts.php?prodenv=true";
 
         if (inputIsValid === true) {
             var formData = $("#contact-form").serialize();
